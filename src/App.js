@@ -3,14 +3,31 @@ import './App.css';
 import { Greet }   from './components/Greet';
 import Welcome from './components/Welcome';
 import Helloworld , { Menu } from './components/Hello';
+import Msg from './components/Msg'
+import Counter from './components/Counter';
+
+
 
 function App() {
   return (
     <div className="App">
-      <Greet />
-      <Welcome />
+      <Greet name="ravi"  patName="rom" >
+        <p>tihs is child props</p>
+      </Greet>
+      <Greet name="brow" patName="bro" >
+        <button>action</button>
+       </Greet> 
+      <Greet name="john"  patName="jo" />
+      {/* <Welcome />
       <Helloworld />
-      <Menu/>
+      <Menu/> */}
+      {/* <Welcome name="ravi"  patName="rom" />
+      <Welcome name="brow" patName="bro" />
+      <Welcome name="john"  patName="jo" /> */}
+      {/* <Msg /> */}
+      <Counter >
+
+      </Counter>
     </div>
   );
 }
