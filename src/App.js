@@ -10,12 +10,22 @@ import { ClassClick } from './components/ClassClick';
 import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
 import UserGretting from './components/UserGretting';
-
-
+import List from './components/List';
+import Stylesheet from './components/Stylesheet';
+import Inline from './components/Inline';
+import './appStyle.css'
+import styles from './appStyle.module.css'
+import Form from './components/Form';
 
 function App() {
   return (
     <div className="App">
+      <Form />
+      {/* <h1 className='error'>error</h1>
+      <h1 className={styles.success}>success</h1>
+      <Inline />
+
+      <Stylesheet primary={true} /> */}
       {/* <Greet name="ravi"  patName="rom" >
         <p>tihs is child props</p>
       </Greet>
@@ -35,7 +45,9 @@ function App() {
       {/* <ClassClick /> */}
       {/* <EventBind /> */}
       {/* <ParentComponent /> */}
-      <UserGretting />
+      {/* <UserGretting /> */}
+      {/* <List /> */}
+      
     </div>
   );
 }
