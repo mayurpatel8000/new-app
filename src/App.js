@@ -16,11 +16,22 @@ import Inline from './components/Inline';
 import './appStyle.css'
 import styles from './appStyle.module.css'
 import Form from './components/Form';
+import LifecycleA from './components/LifecycleA';
+import Frag from './components/Frag';
+import Table from './components/Table';
+import Purecom from './components/Purecom';
+
+
 
 function App() {
   return (
     <div className="App">
-      <Form />
+      <Parentcom />
+      {/* <Purecom /> */}
+      {/* <Table /> */}
+     {/* <Frag /> */}
+      {/* <LifecycleA />      */}
+      {/* <Form /> */}
       {/* <h1 className='error'>error</h1>
       <h1 className={styles.success}>success</h1>
       <Inline />
