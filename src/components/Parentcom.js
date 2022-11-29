@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import Purecom from './components/Purecom'
-import Regcom from './components/Regcom'
+import Purecom from './Purecom'
+import Regcom from './Regcom'
 
 class Parentcom extends Component {
   constructor(props) {
@@ -20,8 +20,10 @@ class Parentcom extends Component {
 //   }
     
   render() {
+    console.log("parent component")
     return (   
     //    <React.Fragment>
+    
       <div>
         Parentcom
         <Regcom name={this.state.name} />

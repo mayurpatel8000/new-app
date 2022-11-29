@@ -20,6 +20,7 @@ import LifecycleA from './components/LifecycleA';
 import Frag from './components/Frag';
 import Table from './components/Table';
 import Purecom from './components/Purecom';
+import Parentcom from './components/Parentcom';
 
 
 
