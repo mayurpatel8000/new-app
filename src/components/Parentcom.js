@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import MemoComp from './MemoComp'
 import Purecom from './Purecom'
 import Regcom from './Regcom'
 
@@ -11,13 +12,13 @@ class Parentcom extends Component {
     }
   }
 
-//   componentDidMount() {
-    // setInterval(() => { 
-    //     this.setState({
-    //     name:'viswas'
-    // })} , 2000)
+  componentDidMount() {
+    setInterval(() => { 
+        this.setState({
+        name:'viswas'
+    })} , 2000)
     
-//   }
+  }
     
   render() {
     console.log("parent component")
@@ -26,8 +27,9 @@ class Parentcom extends Component {
     
       <div>
         Parentcom
-        <Regcom name={this.state.name} />
-        <Purecom name={this.state.name} />
+        <MemoComp name={this.state.name} />
+        {/* <Regcom name={this.state.name} /> */}
+        {/* <Purecom name={this.state.name} /> */}
       </div>
     
     )

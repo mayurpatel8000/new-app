@@ -21,13 +21,21 @@ import Frag from './components/Frag';
 import Table from './components/Table';
 import Purecom from './components/Purecom';
 import Parentcom from './components/Parentcom';
+import Refs from './components/Refs';
+import FocusInput from './components/FocusInput';
+import FRParent from './components/FRParent';
+import PortalDemo from './components/PortalDemo';
 
 
 
 function App() {
   return (
     <div className="App">
-      <Parentcom />
+      <PortalDemo />
+      <FRParent />
+      {/* <FocusInput /> */}
+      {/* <Refs /> */}
+      {/* <Parentcom /> */}
       {/* <Purecom /> */}
       {/* <Table /> */}
      {/* <Frag /> */}
